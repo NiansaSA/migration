@@ -16,7 +16,7 @@ class CreateBukuTable extends Migration
         Schema::create('table_buku', function (Blueprint $table) {
             $table->bigIncrements('id');
             $table->string('judul');
-            $table->string('pengerbit');
+            $table->string('penerbit');
             $table->string('pengarang');
             $table->string('foto');
             $table->timestamps();
