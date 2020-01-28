@@ -9,4 +9,8 @@ class Anggota_model extends Model
     protected $table="anggota";
     protected $tableprimaryKey="id";
     public $timestamps=false;
+
+    protected $fillable = [
+        'nama_anggota', 'alamat', 'telp'
+    ];
 }

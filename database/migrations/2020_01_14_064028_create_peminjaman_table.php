@@ -15,6 +15,10 @@ class CreatePeminjamanTable extends Migration
     {
         Schema::create('peminjaman', function (Blueprint $table) {
             $table->bigIncrements('id');
+            $table->Integer('id_anggota');
+            $table->Integer('id_petugas');
+            $table->date('tgl_pinjam');
+            $table->date('deadline');
             $table->timestamps();
         });
     }
