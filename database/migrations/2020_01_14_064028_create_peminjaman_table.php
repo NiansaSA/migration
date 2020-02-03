@@ -19,6 +19,7 @@ class CreatePeminjamanTable extends Migration
             $table->Integer('id_petugas');
             $table->date('tgl_pinjam');
             $table->date('deadline');
+            $table->string('denda');
             $table->timestamps();
         });
     }
